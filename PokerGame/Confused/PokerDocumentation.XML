@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Poker</name>
+    </assembly>
+    <members>
+        <member name="M:Poker.Card.ToString">
+            <summary>
+            returns card's face and suit
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:Poker.Card.SuitToString">
+            <summary>
+            returns card's suid
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:Poker.Hand.ToString">
+            <summary>
+            returms all cards in the hand
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="T:Poker.IPokerHandsChecker">
+            <summary>
+            Interface for checking poker hands as defined in http://en.wikipedia.org/wiki/List_of_poker_hands.
+            </summary>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsRow(Poker.IHand)">
+            <summary>
+            checks the order of the cards in the hand
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsSameSuit(Poker.IHand)">
+            <summary>
+            checks the suit of the cards in the hand
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsValidHand(Poker.IHand)">
+            <summary>
+            check is the hand valid
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsFlush(Poker.IHand)">
+            <summary>
+            check for flush
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsStraight(Poker.IHand)">
+            <summary>
+            Check for strait hand
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsFourOfAKind(Poker.IHand)">
+            <summary>
+            Checks for four of a kind cards in hand
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsStraightFlush(Poker.IHand)">
+            <summary>
+            check for straight flush
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsFullHouse(Poker.IHand)">
+            <summary>
+            checks fo full house
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsThreeOfAKind(Poker.IHand)">
+            <summary>
+            check for tree of a kind
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsTwoPair(Poker.IHand)">
+            <summary>
+            check for two pair
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsOnePair(Poker.IHand)">
+            <summary>
+            check for one pair
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.IsHighCard(Poker.IHand)">
+            <summary>
+            check for the highest card
+            </summary>
+            <param name="hand"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Poker.PokerHandsChecker.CompareHands(Poker.IHand,Poker.IHand)">
+            <summary>
+            compare cards in hand
+            </summary>
+            <param name="firstHand"></param>
+            <param name="secondHand"></param>
+            <returns>int</returns>
+        </member>
+    </members>
+</doc>
